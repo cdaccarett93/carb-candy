@@ -12,16 +12,18 @@
 		AFA1C4F41E4D061300153914 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFA1C4F21E4D061300153914 /* Main.storyboard */; };
 		AFA1C4F61E4D061300153914 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFA1C4F51E4D061300153914 /* Assets.xcassets */; };
 		AFA1C4F91E4D061300153914 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFA1C4F71E4D061300153914 /* LaunchScreen.storyboard */; };
+		AFAF8E7C1E4E38920065E904 /* numbCandymodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAF8E7B1E4E38920065E904 /* numbCandymodel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AFA1C4EB1E4D061300153914 /* numbOfSkittles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = numbOfSkittles.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFA1C4EB1E4D061300153914 /* carbCandy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = carbCandy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFA1C4EE1E4D061300153914 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFA1C4F01E4D061300153914 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AFA1C4F31E4D061300153914 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AFA1C4F51E4D061300153914 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFA1C4F81E4D061300153914 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFA1C4FA1E4D061300153914 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFAF8E7B1E4E38920065E904 /* numbCandymodel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = numbCandymodel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +40,7 @@
 		AFA1C4E21E4D061200153914 = {
 			isa = PBXGroup;
 			children = (
-				AFA1C4ED1E4D061300153914 /* numbOfSkittles */,
+				AFA1C4ED1E4D061300153914 /* carbCandy */,
 				AFA1C4EC1E4D061300153914 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,30 +48,31 @@
 		AFA1C4EC1E4D061300153914 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AFA1C4EB1E4D061300153914 /* numbOfSkittles.app */,
+				AFA1C4EB1E4D061300153914 /* carbCandy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AFA1C4ED1E4D061300153914 /* numbOfSkittles */ = {
+		AFA1C4ED1E4D061300153914 /* carbCandy */ = {
 			isa = PBXGroup;
 			children = (
 				AFA1C4EE1E4D061300153914 /* AppDelegate.swift */,
 				AFA1C4F01E4D061300153914 /* ViewController.swift */,
+				AFAF8E7B1E4E38920065E904 /* numbCandymodel.swift */,
 				AFA1C4F21E4D061300153914 /* Main.storyboard */,
 				AFA1C4F51E4D061300153914 /* Assets.xcassets */,
 				AFA1C4F71E4D061300153914 /* LaunchScreen.storyboard */,
 				AFA1C4FA1E4D061300153914 /* Info.plist */,
 			);
-			path = numbOfSkittles;
+			path = carbCandy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AFA1C4EA1E4D061200153914 /* numbOfSkittles */ = {
+		AFA1C4EA1E4D061200153914 /* carbCandy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AFA1C4FD1E4D061300153914 /* Build configuration list for PBXNativeTarget "numbOfSkittles" */;
+			buildConfigurationList = AFA1C4FD1E4D061300153914 /* Build configuration list for PBXNativeTarget "carbCandy" */;
 			buildPhases = (
 				AFA1C4E71E4D061200153914 /* Sources */,
 				AFA1C4E81E4D061200153914 /* Frameworks */,
@@ -79,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = numbOfSkittles;
+			name = carbCandy;
 			productName = numbOfSkittles;
-			productReference = AFA1C4EB1E4D061300153914 /* numbOfSkittles.app */;
+			productReference = AFA1C4EB1E4D061300153914 /* carbCandy.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -101,7 +104,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AFA1C4E61E4D061200153914 /* Build configuration list for PBXProject "numbOfSkittles" */;
+			buildConfigurationList = AFA1C4E61E4D061200153914 /* Build configuration list for PBXProject "carbCandy" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -114,7 +117,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AFA1C4EA1E4D061200153914 /* numbOfSkittles */,
+				AFA1C4EA1E4D061200153914 /* carbCandy */,
 			);
 		};
 /* End PBXProject section */
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFAF8E7C1E4E38920065E904 /* numbCandymodel.swift in Sources */,
 				AFA1C4F11E4D061300153914 /* ViewController.swift in Sources */,
 				AFA1C4EF1E4D061300153914 /* AppDelegate.swift in Sources */,
 			);
@@ -262,9 +266,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 85786N7UPQ;
-				INFOPLIST_FILE = numbOfSkittles/Info.plist;
+				INFOPLIST_FILE = carbCandy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = carlos.numbOfSkittles;
+				PRODUCT_BUNDLE_IDENTIFIER = carlos.carbCandy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -275,9 +279,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 85786N7UPQ;
-				INFOPLIST_FILE = numbOfSkittles/Info.plist;
+				INFOPLIST_FILE = carbCandy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = carlos.numbOfSkittles;
+				PRODUCT_BUNDLE_IDENTIFIER = carlos.carbCandy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -286,7 +290,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AFA1C4E61E4D061200153914 /* Build configuration list for PBXProject "numbOfSkittles" */ = {
+		AFA1C4E61E4D061200153914 /* Build configuration list for PBXProject "carbCandy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AFA1C4FB1E4D061300153914 /* Debug */,
@@ -295,13 +299,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AFA1C4FD1E4D061300153914 /* Build configuration list for PBXNativeTarget "numbOfSkittles" */ = {
+		AFA1C4FD1E4D061300153914 /* Build configuration list for PBXNativeTarget "carbCandy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AFA1C4FE1E4D061300153914 /* Debug */,
 				AFA1C4FF1E4D061300153914 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
