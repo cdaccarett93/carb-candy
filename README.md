@@ -4,13 +4,16 @@ Carb Candy
 **Carb Candy** is an app based on [Chris Hannemann's](https://github.com/channemann/push-button-get-candy) push-button-get-candy project. Carb Candy calculates how much candy (skittles) you need to eat based on your current blood sugar level to your intended target level.
 
 #### Screenshot
-![Screenshot Android](http://url/screenshot-appname-android.png "screenshot Android")
 
-![Screenshot iOS](http://url/screenshot-appname-ios.png "screenshot iOS")
+<a href="/images/home.png"><img src="/images/home.png?raw=true" alt="home" width="170"></a>
+<a href="/images/errormsg.png"><img src="/images/errormsg.png?raw=true" alt="error" width="170"></a>
+<a href="/images/calculationex.png"><img src="/images/calculationex.png?raw=true" alt="calulated" width="170"></a>
 
 ### Candy Calculation
 All calculation formulas are based on how-much-candy for more detailed documentation [click-here](https://github.com/channemann/push-button-get-candy/wiki/2.-How-Much-Candy%3F) <br>
 
-The basic formula for determining how much candy should be dispensed is
+The basic formula for determining the total amount of candy:
 
-`nSkittles = (treatmentTarget - glucose) / (CSF x carbsPerSkittle)`
+`totalSkittles = (targetGlucose - currentGlucose) / ((insulinSensitivity/carbRatio) x carbsPerSkittle)`
+
+All calculation are using *units: mg/dL*
