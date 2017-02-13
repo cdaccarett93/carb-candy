@@ -46,7 +46,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }else {
             
             let nCandiesM = numbCandy(currentglucose: curglucose!, targetglucose: targglucose!, insensitivity: isens!, carbratio: cratio!)
-            resultLabel.text = String(nCandiesM.totalCandy())
+            resultLabel.text = String(format: "%.0f", nCandiesM.totalCandy())
         }
 
     }
