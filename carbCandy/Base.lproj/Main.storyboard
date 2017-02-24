@@ -25,52 +25,52 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="container" translatesAutoresizingMaskIntoConstraints="NO" id="8Jj-Ce-exP">
                                 <rect key="frame" x="34" y="56" width="306" height="555"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Hzj-ve-914">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Hzj-ve-914">
                                 <rect key="frame" x="54" y="66" width="266" height="505"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillProportionally" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="XMm-7I-x7g">
-                                        <rect key="frame" x="0.0" y="0.0" width="266" height="347"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="266" height="298"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="xqR-PK-1eE" userLabel="Icon Stack">
-                                                <rect key="frame" x="0.0" y="0.0" width="78" height="347"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="78" height="298"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="currentglucose" translatesAutoresizingMaskIntoConstraints="NO" id="g9g-KO-0Hu">
-                                                        <rect key="frame" x="0.0" y="0.0" width="78" height="82"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="78" height="70"/>
                                                     </imageView>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="targetglucose" translatesAutoresizingMaskIntoConstraints="NO" id="zsZ-jL-ecj">
-                                                        <rect key="frame" x="0.0" y="88" width="78" height="82"/>
+                                                        <rect key="frame" x="0.0" y="76" width="78" height="70"/>
                                                     </imageView>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="insulinsensitivity" translatesAutoresizingMaskIntoConstraints="NO" id="Uke-U2-RKA">
-                                                        <rect key="frame" x="0.0" y="176" width="78" height="83"/>
+                                                        <rect key="frame" x="0.0" y="152" width="78" height="70"/>
                                                     </imageView>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carbratio" translatesAutoresizingMaskIntoConstraints="NO" id="ela-nK-CAy">
-                                                        <rect key="frame" x="0.0" y="265" width="78" height="82"/>
+                                                        <rect key="frame" x="0.0" y="228" width="78" height="70"/>
                                                     </imageView>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="VTn-VD-BlE" userLabel="Textfield Stack">
-                                                <rect key="frame" x="83" y="20" width="183" height="307"/>
+                                                <rect key="frame" x="83" y="20" width="183" height="258"/>
                                                 <subviews>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Current Glucose Level" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VIQ-4l-9gU">
-                                                        <rect key="frame" x="0.0" y="0.0" width="183" height="41"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="183" height="30"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                     </textField>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Target Glucose Level" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U4e-aa-SgN">
-                                                        <rect key="frame" x="0.0" y="86" width="183" height="45"/>
+                                                        <rect key="frame" x="0.0" y="75" width="183" height="31"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                     </textField>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insulin Sensitivity" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b5C-hE-pFL">
-                                                        <rect key="frame" x="0.0" y="176" width="183" height="43"/>
+                                                        <rect key="frame" x="0.0" y="151" width="183" height="32"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                     </textField>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Carb Ratio" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yoY-6K-1rV">
-                                                        <rect key="frame" x="0.0" y="264" width="183" height="43"/>
+                                                        <rect key="frame" x="0.0" y="228" width="183" height="30"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
@@ -86,27 +86,33 @@
                                             <constraint firstItem="U4e-aa-SgN" firstAttribute="centerY" secondItem="zsZ-jL-ecj" secondAttribute="centerY" id="tgU-Of-QXW"/>
                                         </constraints>
                                     </stackView>
+                                    <pickerView contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="mnC-Xu-bHF">
+                                        <rect key="frame" x="0.0" y="301.5" width="266" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="8f9-FW-kmD"/>
+                                        </constraints>
+                                    </pickerView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bPo-P4-dJE">
-                                        <rect key="frame" x="0.0" y="347" width="266" height="77"/>
+                                        <rect key="frame" x="0.0" y="365.5" width="266" height="66"/>
                                         <state key="normal" image="calbtn"/>
                                         <connections>
                                             <action selector="calCandy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t9y-bo-pyy"/>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="EFz-cs-Kdq">
-                                        <rect key="frame" x="0.0" y="424" width="266" height="81"/>
+                                        <rect key="frame" x="0.0" y="435" width="266" height="70"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="candy" translatesAutoresizingMaskIntoConstraints="NO" id="qdG-9u-FD3">
-                                                <rect key="frame" x="0.0" y="0.0" width="70" height="81"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="esj-zL-LIm">
-                                                <rect key="frame" x="113" y="0.0" width="11" height="81"/>
+                                                <rect key="frame" x="111" y="0.0" width="10.5" height="70"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Skittles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mSr-6p-7OM">
-                                                <rect key="frame" x="167" y="0.0" width="99" height="81"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Candies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mSr-6p-7OM">
+                                                <rect key="frame" x="162" y="0.0" width="104" height="70"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -134,6 +140,7 @@
                         <outlet property="carbratioTextField" destination="yoY-6K-1rV" id="Bnv-8Y-aEE"/>
                         <outlet property="currentglucoseTextField" destination="VIQ-4l-9gU" id="9fe-tq-Uol"/>
                         <outlet property="insensitivityTextField" destination="b5C-hE-pFL" id="8zU-bK-B7A"/>
+                        <outlet property="picker" destination="mnC-Xu-bHF" id="Fcs-6E-B3Z"/>
                         <outlet property="resultLabel" destination="esj-zL-LIm" id="E47-78-pMj"/>
                         <outlet property="targetglucoseTextField" destination="U4e-aa-SgN" id="UIw-z6-f4x"/>
                     </connections>
