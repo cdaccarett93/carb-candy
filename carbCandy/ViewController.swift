@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate, UIPickerViewDataSource, UIPickerViewDelegate {
-
+    
     @IBOutlet weak var picker: UIPickerView!
     
     @IBOutlet weak var currentglucoseTextField: UITextField!
@@ -22,6 +22,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIPickerViewDataSou
     
     var carbpCandy:Double = 0.0;
     var stringCandy:String = "";
+    var btnPressed:Bool = false;
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +32,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIPickerViewDataSou
         self.carbratioTextField.delegate = self
         self.picker.delegate = self
         self.picker.dataSource = self
+        picker.isHidden = true;
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,6 +41,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIPickerViewDataSou
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
+        picker.isHidden = true;
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -63,21 +66,24 @@ class ViewController: UIViewController, UITextFieldDelegate, UIPickerViewDataSou
         stringCandy = candies[row]
     }
     
+    @IBAction func chooseCandy(_ sender: Any) {
+        picker.isHidden = false
+        btnPressed = true
+    }
     
     @IBAction func calCandy(_ sender: Any) {
         let curglucose = Double(currentglucoseTextField.text!)
         let targglucose = Double(targetglucoseTextField.text!)
         let isens = Double(insensitivityTextField.text!)
         let cratio = Double(carbratioTextField.text!)
-        let carbpCandy = Double(stringCandy.substring(from:stringCandy.index(stringCandy.endIndex, offsetBy: -4)))
         let alert = UIAlertController(title: "Error:", message: "Please Fill Out All Fields", preferredStyle: UIAlertControllerStyle.alert)
         
         
-        if ((currentglucoseTextField.text?.isEmpty)! || (targetglucoseTextField.text?.isEmpty)! || (insensitivityTextField.text?.isEmpty)! || (carbratioTextField.text?.isEmpty)!) {
+        if ((currentglucoseTextField.text?.isEmpty)! || (targetglucoseTextField.text?.isEmpty)! || (insensitivityTextField.text?.isEmpty)! || (carbratioTextField.text?.isEmpty)! || btnPressed == false) {
             alert.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
         }else {
-            
+            let carbpCandy = Double(stringCandy.substring(from:stringCandy.index(stringCandy.endIndex, offsetBy: -4)))
             let nCandiesM = numbCandy(currentglucose: curglucose!, targetglucose: targglucose!, insensitivity: isens!, carbratio: cratio!, carbperCandy: carbpCandy!)
             resultLabel.text = String(format: "%.0f", nCandiesM.totalCandy())
         }

@@ -86,14 +86,17 @@
                                             <constraint firstItem="U4e-aa-SgN" firstAttribute="centerY" secondItem="zsZ-jL-ecj" secondAttribute="centerY" id="tgU-Of-QXW"/>
                                         </constraints>
                                     </stackView>
-                                    <pickerView contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="mnC-Xu-bHF">
-                                        <rect key="frame" x="0.0" y="301.5" width="266" height="60"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="8f9-FW-kmD"/>
-                                        </constraints>
-                                    </pickerView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0pA-zb-qDn">
+                                        <rect key="frame" x="0.0" y="310.5" width="266" height="34"/>
+                                        <state key="normal" image="chooseCandy">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="chooseCandy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5es-XI-2dZ"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bPo-P4-dJE">
-                                        <rect key="frame" x="0.0" y="365.5" width="266" height="66"/>
+                                        <rect key="frame" x="0.0" y="356.5" width="266" height="66"/>
                                         <state key="normal" image="calbtn"/>
                                         <connections>
                                             <action selector="calCandy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t9y-bo-pyy"/>
@@ -121,6 +124,10 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <pickerView contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="mnC-Xu-bHF">
+                                <rect key="frame" x="0.0" y="451" width="375" height="216"/>
+                                <color key="backgroundColor" red="0.90778595209121704" green="0.2350764274597168" blue="0.23761913180351257" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -128,11 +135,14 @@
                             <constraint firstItem="8Jj-Ce-exP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="36" id="5oo-oc-V5K"/>
                             <constraint firstItem="8Jj-Ce-exP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="18" id="Qze-af-boE"/>
                             <constraint firstAttribute="trailingMargin" secondItem="8Jj-Ce-exP" secondAttribute="trailing" constant="19" id="Vvg-Nz-ukP"/>
+                            <constraint firstAttribute="trailing" secondItem="mnC-Xu-bHF" secondAttribute="trailing" id="WnP-eo-4Mg"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8Jj-Ce-exP" secondAttribute="bottom" constant="56" id="YAg-eS-7CO"/>
                             <constraint firstItem="Hzj-ve-914" firstAttribute="leading" secondItem="8Jj-Ce-exP" secondAttribute="leading" constant="20" id="gsc-LK-iWC"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mnC-Xu-bHF" secondAttribute="bottom" id="iRz-c7-Xhx"/>
                             <constraint firstItem="Hzj-ve-914" firstAttribute="trailing" secondItem="8Jj-Ce-exP" secondAttribute="trailing" constant="-20" id="iaS-Vn-HzB"/>
                             <constraint firstItem="Hzj-ve-914" firstAttribute="bottom" secondItem="8Jj-Ce-exP" secondAttribute="bottom" constant="-40" id="ir0-dB-lFW"/>
                             <constraint firstItem="Hzj-ve-914" firstAttribute="top" secondItem="8Jj-Ce-exP" secondAttribute="top" constant="10" id="t5D-0P-OQh"/>
+                            <constraint firstItem="mnC-Xu-bHF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="u5T-91-ZFe"/>
                             <constraint firstItem="Hzj-ve-914" firstAttribute="centerX" secondItem="8Jj-Ce-exP" secondAttribute="centerX" id="xUU-yE-uEC"/>
                         </constraints>
                     </view>
@@ -154,6 +164,7 @@
         <image name="calbtn" width="145" height="66"/>
         <image name="candy" width="70" height="70"/>
         <image name="carbratio" width="70" height="70"/>
+        <image name="chooseCandy" width="137" height="34"/>
         <image name="container" width="340" height="562"/>
         <image name="currentglucose" width="70" height="70"/>
         <image name="insulinsensitivity" width="70" height="70"/>
